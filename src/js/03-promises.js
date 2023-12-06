@@ -30,7 +30,7 @@ function createAllPromises(evt) {
     createPromise(i + 1, firstDelay + delayStep * i)
       .then(({ position, delay }) => {
         iziToast.show({
-          messageColor: '#fafafa',
+          messageColor: '#212121',
           backgroundColor: '#3fe86f',
           messageSize: '18px',
           position: 'topRight',
@@ -45,7 +45,7 @@ function createAllPromises(evt) {
       })
       .catch(({ position, delay }) => {
         iziToast.show({
-          messageColor: '#fafafa',
+          messageColor: '#212121',
           backgroundColor: '#fa6b55',
           messageSize: '18px',
           position: 'topRight',
