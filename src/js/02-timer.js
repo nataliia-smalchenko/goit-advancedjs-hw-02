@@ -29,6 +29,7 @@ const options = {
         transitionIn: 'fadeIn',
         transitionOut: 'fadeOut',
         timeout: 3000,
+        targetFirst: false,
         message: '❌  Please choose a date in the future',
       });
       elements.btnStart.disabled = true;
@@ -73,7 +74,7 @@ function startTimer() {
 
 function setTime() {
   const ms = chosenTime - new Date();
-  if (ms > 0) {
+  if (ms >= 0) {
     const { days, hours, minutes, seconds } = convertMs(ms);
     elements.days.textContent = addLeadingZero(days);
     elements.hours.textContent = addLeadingZero(hours);
