@@ -59,4 +59,5 @@ function createAllPromises(evt) {
         });
       });
   }
+  form.reset();
 }
